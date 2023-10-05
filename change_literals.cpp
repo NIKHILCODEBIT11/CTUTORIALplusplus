@@ -6,6 +6,8 @@ int main(){
     size of float is 4 bytes
     size of long double is 12 bytes
     */
+
+   //********* FLOAT , DOUBLE , LONG DOUBLE LITERALS *********
     float d=34.4;
     long double e=34.4;
     cout<<"The size of 34.4 is "<<sizeof(34.4)<<endl;

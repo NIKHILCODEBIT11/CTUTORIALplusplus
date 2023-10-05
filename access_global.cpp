@@ -2,6 +2,7 @@
 using namespace std;
 int c=874; // global variable
 int main(){
+    // ************* BUILD IN DATA TYPES ************
     int a,b,c;
     cout<<"enter a: ";
     cin>>a;
