@@ -5,6 +5,7 @@ int main(){
     cout<<"enter age :";
     int age;
     cin>>age;
+     // SELECTION CONTROL STRUCTURE :- if    else if   else
     if(age<18&&age>2){
         cout<<"you are not invited sorry !!!";
     }
