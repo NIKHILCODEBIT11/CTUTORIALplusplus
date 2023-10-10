@@ -7,7 +7,13 @@ class complex{
     void print_number();
     // the below running of command is must.
     friend complex sum_complex(complex o1,complex o2);
+    /*
+    IN ABOVE FRIEND FUNCTION AS I WAS MAKING FRIEND SUCH A
+    FUNCTION WHICH IS A FOREIGN FUNCTION SO I DON'T NEED
+    TO USE SCOPE RESOLUTION OPERATOR AS USED IN MAKING FRIEND
+    OF A DIFF CLASS.*/
 };
+complex sum_complex(complex o1,complex o2);
 // instead of here i can write below function at end also.
 // complex sum_complex(complex o1,complex o2){
 //     complex o3;
