@@ -1,40 +1,23 @@
 #include<iostream>
 using namespace std;
-class shop{
-    private:
-    int n;
-    int itemid[100];
-    int itemprice[100];
-    int number;
-    public:
-    void init(){number=1;};
-    void set_price(int);
-    void get_price(int);
-};
+  // global variable
 int main(){
-    int n;
-    cout<<"Enter n :";
-    cin>>n;
-    shop s;
-    s.init();
-    s.set_price(n);
-    s.get_price(n);
-    return 0;
-}
-void shop :: set_price(int n){
-    for(int i=0;i<n;i++){
-        cout<<"Enter item id of item no. "<<number<<" : ";
-        cin>>itemid[number-1];
-        cout<<number<<endl;
-        cout<<"Enter price of item no. "<<number<<" : ";
-        cin>>itemprice[number-1];
-        cout<<number<<endl;
-        number+=1;
-        cout<<"Updated value of number here is "<<number<<endl;
+    string s;
+    cout<<"Enter number :";
+    cin>>s;
+    int n=0;
+    cout<<s.length()<<endl;
+    for(int i=0;i<s.length();i++){
+        cout<<n<<endl;
+        n=n+s.at(i);
+       // cout<<n<<endl;
+        // cout<<s.at(i)<<endl;
     }
-}
-void shop::get_price(int n){
-    for(int i=0;i<n;i++){
-        cout<<"The price of item with item id "<<itemid[i]<<" is "<<itemprice[i]<<endl;
+     cout<<n<<endl;
+    if(n%2==0){
+        cout<<"Divisible by 3"<<endl;
+    }
+    else{
+        cout<<"Not"<<endl;
     }
 }

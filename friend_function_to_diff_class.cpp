@@ -14,7 +14,6 @@ ACCESS THE MEMBER VARAIBLES AND FUNCTION OF THE PREV CLASS.
 using namespace std;
 // FORWARD DECLARATION :-
 class complex;
-
 class calculator{
     public:
     int add(int a,int b){
