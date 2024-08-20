@@ -16,7 +16,7 @@ class complex{
 int main(){
     complex *iu;
     iu=new complex;
-    iu->set_data(22,33);
-    iu->get_data();
+    iu->set_data(22,33);    // OR (*iu).set_data(22,33);
+    iu->get_data();        // OR (*iu).get_data();   
     return 0;
 }
