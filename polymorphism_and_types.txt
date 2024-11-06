@@ -1,0 +1,77 @@
+########### INTRODUCTION TO ******* POLYMORPHISM ******** :-
+
+-------> I t simply means  "ONE NAME AND MULTIPLE FORMS".
+
+EX- function overloading, operator overloading
+
+EX- virtual functions
+
+-----> Polymorphism in C++ is of two types :-
+
+1) COMPILE TIME POLYMORPHISM :-  { EASY }
+
+----> Compile time polymorphism is achieved using :-
+
+   1.1 FUNCTION OVERLOADING
+
+   1.2 OPERATOR OVERLOADING
+
+2) RUN TIME POLYMORPHISM :-   { LITTLE TRICKY }
+
+----> Run time polymorphism is achieved using :-
+
+   2.1 VIRTUAL FUNCTIONS
+
+
+                   
+                                        POLYMORPHISM
+						                            |
+					                               |
+				                __________________|_________________________________
+				                |                                                  |
+				                |                                                  |
+                     Compile time polymorphism                            Run time polymorphism
+                             	   | 						                              |	
+				                     | 						                              |	
+	            __________________|_________________				                  |
+               |                                   |			             Virtual functions	
+               |			                	         |
+               |				                        |
+      Function overloading		            Operator overloading
+				   
+
+
+&&&&&&&&&&&& Compile time polymorphism :-
+
+------> The object binds to the function call during compile time only.
+
+                                            OR
+
+------> The decision by compiler is taken during compile time only such that out of all function {from function overloading or operator
+ overloading} which function is to be run (ALSO CALLED AS EARLY BINDING OR STATIC BINDING) for that object by examining the no. of
+  parameters their type or any kind of default arguments in function definition and function call.
+
+-----> aFTER COMPILATION, THE DECISION IS ALREADY BEEN TAKEN BY THE COMPILER OF WHICH FUNCTION DEFINITION TO RUN FOR THE FUNCTION CALL 
+OF THE OBJECT, SO DURING COMPILATION ONLY THE COMPILER BINDS THE OBJECT TO THAT SPECUIFIC FUNCTION WHOSE FUNCTION DEFINITION IS TO BE 
+RUN. 
+
+***** iN COMPILE TIME POLYMORPHISM THE PROGRAMMER HAS IDEA THAT WHICH FUNCTION WILL BE CALLED FOR THE OBJECT.
+
+
+
+&&&&&&&&&&& Run time polymorphism :-
+
+------> In this polymorphism, the compiler keeps on delaying {or differing} the decision of which function definition is to be run for 
+the function call of the object.
+
+------> I will only get to know which function definition ran for that object only after the execution of the program,   WHICH DEPENDS 
+UPON THE **** TYPE OF THE POINTER ****
+
+------> hERE, DURING THE EXECUTION OF PROGRAM ONLY THE OBJECT IS BINDED WITH THE FUNCTION WHOSE FUNCTION DEFINITION IS TO BE RUN.
+
+------> To know or mastery about the run time polymorphism first of all i will have to learn "POINTERS TO DERIVED CLASSES".
+
+
+%%%%%%%%%%%     In desi language, i can say that in this polymorphism during function call only the compiler joins the wire of the 
+object with that function whose function definition is to be run, but it is not the cae with the run time polymorphism, as it depends
+ upon the the type of pointer to know which function definition is to be wired with the object.

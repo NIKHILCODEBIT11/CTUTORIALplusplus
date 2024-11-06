@@ -1,0 +1,22 @@
+############# Pointes to derived classs :-
+
+**** Refer to below example program ******
+
+-----> As, i know i can make a baseclass pointer which can point to base class object, but it won't be able to access the member
+ variables of derived class even they have same name member variables and functions.
+
+-----> The main point is :-  "IT IS LEGAL THAT A BASE CLASS POINTER CAN POINT TO DERIVED CLASS OBJECT BUT CAN USE ONLY AND ONLY THOSE
+ MEMBER FUNCTIONS OR VARIABLES THAT ARE INHERITED IN DERIVED CLASS FROM BASE CLASS"------> It is called as "LATE BINDING".
+
+
+************ Whosever pointer i make like in baseclass *baseclass_ptr, i made a pointer of baseclass no matter whether it points to
+ base class obj or derived class obj, it will run only and only the member variables and functions of base class as the pointer is of
+  baseclass.
+Similarly, if i made derivedclass *derivedclass_ptr, i made a pointer of derived class, now no matter whether it points to base class 
+obj {{ THIS WELL CAN'T BE DONE ---> DERIVED CLASS POINTER POINTING TO BASE CLASS OBJ }} or derived class obj, it will run only and only 
+member variables and functions of derived class as the pointer is of derived class.
+
+
+********** ALTHOUGH I CAN TELL WHICH FUNCTION WILL RUN BY LOOKING AT THE TYPE OF POINTER, WHETHER IT IS OF BASECLASS OR DERIVED CLASS, 
+BUT STILL IN PROGRAM IT IS ASSIGNED ONLY AT THE TIME OF RUNNING OF CODE NOT DURING THE TIME OF COMPILATION, THAT'S WHY IT IS CALLED 
+AS RUN TIME POLYMORPHISM. *********
