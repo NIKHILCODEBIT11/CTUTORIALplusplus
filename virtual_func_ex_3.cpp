@@ -4,16 +4,18 @@ class baseclass{
     int baseclass_pvt;
     public:
     int baseclass_pub;
-    void display(){
-       // cout<<"Displaying base class pvt variable "<<baseclass_pvt<<endl;
-        cout<<"Displaying base class public variable "<<baseclass_pub<<endl<<endl;
+    virtual void display(){
+    // cout<<"Displaying base class pvt variable "<<baseclass_pvt<<endl;
+    //     cout<<"Displaying base class public variable "<<baseclass_pub<<endl<<endl;
+    cout<<"Hi"<<endl;
     }
 };
 class derivedclass : public baseclass{
     int derivedclass_pvt;
     public:
     int derivedclass_pub;
-    void display();
+    //void display();   // I should even comment this as i am checking whether by removing "display" from "derived class" i will
+    // get the display() of base class or not.
 };
 int main(){
 
@@ -54,8 +56,8 @@ int main(){
 
     return 0;
 }
-void derivedclass :: display(){
-    // cout<<"Displaying derived class pvt cariable "<<derivedclass_pvt<<endl;
-    cout<<"Displaying derived class public variable "<<derivedclass_pub<<endl;
-    cout<<"Displaying base class public variable "<<baseclass_pub<<endl;
-}
+// void derivedclass :: display(){
+//     // cout<<"Displaying derived class pvt cariable "<<derivedclass_pvt<<endl;
+//     cout<<"Displaying derived class public variable "<<derivedclass_pub<<endl;
+//     cout<<"Displaying base class public variable "<<baseclass_pub<<endl;
+// }

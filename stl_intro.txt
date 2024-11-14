@@ -1,0 +1,67 @@
+############ Intrduction to STL :-
+
+--------> STL stands for 	Standard Template Library	which is very very much needed for competitive programming.
+
+-------> Because in times like competitive programming or interview, i will have limited time, and although i know concepts, but implementing them will take me some time, which can be avoided by using "STL".
+
+-------> Some major tasks i can perform using "STL" are 
+
+(1) Resize
+
+(2) Sort
+
+(3) Search
+
+-------->  "STL" is a LIBRARY of " GENERIC CLASSES AND FUNCTIONS ".
+
+--------> " GENERIC CLASSES AND FUNCTIONS " closely use the "templates".
+
+
+############## Why to use STL ??????????
+
+
+(1) Reuse well tessted 
+
+(2) Time savings
+
+
+########### Components of STL :-
+
+
+-------> The different components of "STL" are :-
+
+
+(1) Containers :- Stores data like vector {diff from arrays} and containers use template classes, adn since they use template classes, so i can even make them int container, float container, char container etc.
+
+
+(2) Algorithms :- These are the set of procedure, that i can use for manipulating data and arrive at end result. Some examples are :-
+
+----> SORTING
+
+----> SEARCHING
+
+Even algorithms use " TEMPLATE FUNCTIONS "
+
+
+
+(3) Iterators :- These are the "OBJECTS" that point to an element in a container.
+
+-------> These are handled just like pointers.
+
+-------> It connects algorithms with containers and plays a major role in data manipulation.
+
+************* STL is used becuase it's a good idea not to reinvent the wheel, that means when someone has already done work for reducing the work load of me by directly using it, then instead of again doing the same work, why not i use that work and then try to innovate further on that wheel. 
+
+
+########## Consider below example :-
+
+
+container :-
+		_________________________________________________
+		|	    |	    |	    |	    |	    |	    |
+		|   1  	|   7	|   11  |  18	|	    |    	|
+		|_______|_______|_______|_______|_______|_______|
+
+	     <----------^ ------------> { Iterator moves as instructed by the algorithm }
+			        |		
+			        |-----> ITERATOR

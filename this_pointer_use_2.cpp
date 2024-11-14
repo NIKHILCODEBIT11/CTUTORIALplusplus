@@ -8,6 +8,8 @@ class A{
     A& set_data(int a){   // Here, since i want this function to return me the object that's why i did "A&" which is same as inany other 
                           // built in data type like int,float or char etc. so that when it will return me the *this which is same as 
                           // that of "A&".    {int *ptr=&a}  
+
+// Updated information :-  INSTEAD OF "A&" I CAN EVEN SIMPLY USED "A" ALSO AS "*this" IS THE OBJECT OF TYPE "A" WHICH IS BEING RETURNED.
         this->a=a; 
         return *this;   // It will return me the same object for which i set the pvt variable "a" to formal parameter "a".
     }

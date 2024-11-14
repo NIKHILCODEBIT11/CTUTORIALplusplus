@@ -4,7 +4,7 @@ class baseclass{
     int baseclass_pvt;
     public:
     int baseclass_pub;
-    void display(){
+    virtual void display(){
        // cout<<"Displaying base class pvt variable "<<baseclass_pvt<<endl;
         cout<<"Displaying base class public variable "<<baseclass_pub<<endl<<endl;
     }
